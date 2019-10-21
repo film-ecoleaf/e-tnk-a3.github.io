@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>TOP</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+      function onClick(dirName){
+        window.open('../'+ dirName + '/html/index.html');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <image class="logo" src="./images/weblogo2.png"></image>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Profile</a></li>
+          <li><a>Blog</a></li>
+        </ul>
+        <div></div>
+      </nav>
+      <section class="container">
+        <div class="contents">
+          <image class="page-image" src="./images/practice01.png" onclick="onClick('practice01')"></image>
+          <div class="page-comment">
+            <div class="comment-title">
+              AAAAAAAAAAAAA
+            </div>
+            <div class="comment">
+              <p>自学用Webページ作成第一弾</p>
+              <p>固定ナビゲーションバーと、スクロール時にアニメーション描画することを課題。また、ナビゲーションバーのメニューをホバーした際に、アニメーションを発生させることも課題とした作り</p>
+              <p>レスポンシブ非対応</p>
+            </div>
+            <div class="comment-footer">
+              GitHub
+            </div>
+          </div>
+        </div>
+
+          <div class="contents">
+          <image class="page-image" src="./images/practice02.png" onclick="onClick('practice02')"></image>
+            <div class="page-comment">
+              <div class="comment-title">
+                Responsive Navibation Bar
+              </div>
+              <div class="comment">
+                <p>自学用Webページ作成第2段</p>
+                <p>PC版とスマホ版でナビゲーションバーのレイアウトを変更</p>
+                <p>アイコンのアニメーションをつけることで現代風のリッチな感じ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+          <image class="page-image" src="./images/practice01.png" onclick="onClick('practice01')"></image>
+            <div class="page-comment">
+              <div class="comment-title">
+                Sticky Navibation Bar
+              </div>
+              <div class="comment">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+            </div>
+          </div>
+
+      </section>
+    </div>
+  </body>
+</html>
