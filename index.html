@@ -2,59 +2,106 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>TOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/index.css">
+    <title>TOP</title>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <div class=".wrapper">
+      <!-- navbar -->
+      <nav class="navBar">
+        <div class="nav-container">
+            <a href="#">
+                <img class="logo" src="./images/Esuke.png" alt="logo">
+              </a>
+              
+              <ul class="pc-menu">
+                  <li>
+                      <a href="#"><img src="./images/profile2.png" alt="logo"></a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/TNK_create?s=17" target="_blank"><img src="./images/twitter2.png" alt="logo"></a>
+                  </li>
+              </ul>
+              <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
+              </div>
+        </div>
+        <ul id="menu">
+            <li>
+              <a href="#">
+                  <img src="./images/profile.png" alt="logo">About
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/TNK_create?s=17" target="_blank">
+                <img src="./images/twitter.png" alt="logo">Twitter
+              </a>
+            </li>
+            <li><a href="#"></a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <!-- contents-->
+      <div class="profile-box">
+          <div class="header about">
+              <h1 >About</h1>
+              <p>福岡でWebデザイナーを目指す元プログラマーです。</p>
+              <p>2015年から2018年までプログラミングをしておりました。</p>
+              <p>Webアプリの中身ではなく、お客様のイメージを形にして喜んで頂きたいと感じ、</p>
+              <p>現在は０からWebデザインの勉強をしております。</p>
+              <div class="profile-container">
+                <img src="./images/profile.JPG" alt="plf">
+                <div class="profile">
+                  <p>田中　英輔 - Tanaka Eisuke</p>
+                  <p>1994年　8月12日生まれ</p>
+                  <p>趣味：楽器・音楽鑑賞</p>
+                  <p>資格：基本情報技術者 (2015年取得)</p>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="design-container">
+          <div class="header">
+              <h1 >Web Designs</h1>
+              <p>参考にしている外国のWebデザイナーの方の講座を見ながら、</p>
+              <p>実際の業務をイメージしつつ作成したものをまとめています。</p>
+              <p>作成する際はただ移すだけではなく、自分の中で何かしらのテーマを決め、</p>
+              <p>素材を選びテーマに沿うように意識しています。</p>
+            </div>
+            <div class="content">
+              <div class="content-boxes">
+                  <img  src="./images/practice01.PNG" onclick="onClick('practice01')" alt="">
+              </div>
+              <div class="content-boxes">
+                  <img  src="./images/practice02.PNG" onclick="onClick('practice02')" alt="">
+              </div>
+              <div class="content-boxes">
+                  <img  src="./images/practice03.PNG" onclick="onClick('practice01')" alt="">
+              </div>
+            </div>
+      </div>
+
+      <footer>
+        <p  >EisukeTanaka | Web Atelier</p>
+      </footer>
+    </div>
     <script type="text/javascript">
+
       function onClick(dirName){
         window.open('../'+ dirName + '/html/index.html');
       }
+
+      $("#toggle").click(function(){
+        $(this).toggleClass('on');
+        $("#menu").toggleClass("active");
+        $("body").toggleClass("active");
+      })
     </script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav>
-        <image class="logo" src="./images/weblogo2.png"></image>
-        <ul>
-          <li><a>Home</a></li>
-          <li><a>Profile</a></li>
-          <li><a>Blog</a></li>
-        </ul>
-        <div></div>
-      </nav>
-      <section class="container">
-        <div class="contents">
-          <image class="page-image" src="./images/stickynavbar.png" onclick="onClick('practice01')"></image>
-          <div class="page-comment">
-            <div class="comment-title">
-              AAAAAAAAAAAAA
-            </div>
-            <div class="comment">
-              <p>自学用Webページ作成第一弾</p>
-              <p>固定ナビゲーションバーと、スクロール時にアニメーション描画することを課題。また、ナビゲーションバーのメニューをホバーした際に、アニメーションを発生させることも課題とした作り</p>
-              <p>レスポンシブ非対応</p>
-            </div>
-            <div class="comment-footer">
-              GitHub
-            </div>
-          </div>
-        </div>
-
-          <div class="contents">
-          <image class="page-image" src="./images/practice02.png" onclick="onClick('practice02')"></image>
-            <div class="page-comment">
-              <div class="comment-title">
-                Responsive Navibation Bar
-              </div>
-              <div class="comment">
-                <p>自学用Webページ作成第2段</p>
-                <p>PC版とスマホ版でナビゲーションバーのレイアウトを変更</p>
-                <p>アイコンのアニメーションをつけることで現代風のリッチな感じ</p>
-              </div>
-            </div>
-          </div>
-
-      </section>
-    </div>
   </body>
 </html>

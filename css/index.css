@@ -1,129 +1,304 @@
-@font-face {
-  font-family: 'gartonmedium';
-  src: url('garto16-webfont.eot?#iefix') format('embedded-opentype'),
-       url('garto16-webfont.woff2') format('woff2'),
-       url('garto16-webfont.woff') format('woff'),
-       url('garto16-webfont.ttf') format('truetype'),
-       url('garto16-webfont.svg#gartonmedium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-body {
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  font-family: 'roboto';
+  border: none;
+  outline: none;
+  vertical-align: baseline;
+  font-size: 100%;
 
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+/* ページ全体共通設定 */
+html {
+  font-family: roboto;
+}
+
+body {
   width: 100%;
-  padding: 0px 100px;
-  box-sizing: border-box;
-  transition: .3s;
-  box-shadow: 0 1px 5px 0 rgba(41,85,115,.21);
-  background-color: #fff;
-  z-index: 100;
+}
+body.active {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navBar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  color: #fff;
+  font-size: 48px;
+}
+
+p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+/* ナビゲーションバー設定 */
+nav {
+  margin: auto;
+  background: #f7f7f7;
+  height: 270px;
+  line-height: 270px;
+}
+
+nav a img {
+  vertical-align: middle;
+  height: 270px;
+}
+
+nav a .logo {
+}
+nav a:nth-child(2){
+  float: right;
+}
+.nav-container {
+  width: 1020px;
+  margin: auto;
+}
+/* ハンバーガーアイコンの設定 */
+#toggle {
+  display: none;
+  visibility: visible;
+  opacity: 1;
+  margin-top: 6px;
+}
+
+#toggle {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+}
+
+#toggle .span {
+  height: 3px;
+  background: #9a9a9a;
+  transition: all 0.3s ease-out;
+  backface-visibility: hidden;
+  margin: 5px auto;
+}
+
+#toggle.on #one {
+  transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+#toggle.on #three {
+  transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+/* ページヘッダー部分 */
+.header {
+  width: 1020px;
+  margin: auto;
+}
+
+.header p {
+  width: 60%;
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* コンテンツ部分 */
+.profile-box {
+  background: #cacaca;
+  padding: 100px 0px;
+}
+.profile-container {
+  margin-top: 100px;
   display: flex;
+  flex-wrap:wrap;
+  justify-content: flex-end;
+}
+.profile-container img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.profile {
+  margin: 0px 40px;
+}
+.profile p {
+  width: 100%;
+}
+
+.design-container {
+  padding: 100px 0px;
+  background: #2f2f2f
+}
+
+.content {
+  width: 1020px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-nav .logo {
-  transition: .3s;
+.content-boxes {
+  width: 33%;
+  height: 335px;
+  margin-bottom: 30px;
 }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  list-style: none;
-  transition: .5s;
-}
-
-nav ul li a {
-  font-size: 30px;
-  line-height: 87px;
-  padding: 12px 30px;
-  transition: .5s;
-  text-decoration: none;
-  font-family: 'gartonmedium';
-  color: #08a;
-}
-
-nav ul li:hover {
-  cursor: pointer;
-  background-color: #08a;
-}
-
-nav ul li a:hover {
-  color: #fff;
-}
-
-.container {
-  margin: auto;
-  margin-top: 150px;
-  width: 1075px;
-}
-
-.contents {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
-.page-image {
-  box-shadow: 6px 9px 10px 0px #808080ab;
+.content-boxes img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
-  width: 70%;
-  height: 450px;
-  margin-right: 10px;
   transition: .3s;
   opacity: 1;
+  box-shadow: 6px 9px 10px 0px #808080ab;
+
 }
 
-.page-image:hover {
+.content-boxes img:hover {
   opacity: .7;
   cursor: pointer;
 }
 
-.page-comment {
+/* footer部分 */
+footer {
+  background: #2f2f2f;
+  line-height: 120px;
+}
+
+footer p {
+  text-align: center;
+  color: grey;
+  margin: auto;
+
+}
+/* menu関連 */
+.pc-menu {
+  float: right;
+  position: relative;
+}
+.pc-menu li {
+  display: inline-block;
+  position: relative;
+  padding: 0px 20px;
+  line-height: 70px;
+}
+.pc-menu li a img {
+  height: 45px;
+}
+
+#menu.active {
+  visibility: visible;
+  opacity: 0.99;
+}
+#menu {
+  z-index: 1;
+  top: 0px;
+  position: absolute;
+  background: #2f2f2f;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-out;
+  display: table;
+  vertical-align: center;
+}  
+#menu li {
+  display: block;
+  line-height: 70px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  font-size: 48px;
+  min-height: 48px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#menu li a {
+  color: #fff;
+}
+#menu li img {
+   height:70px;
+} 
+
+#menu li:nth-child(1) {
+  margin-top: 140px;
+}
+
+#menu li a img {
   margin: 0px 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #fafafa;
-  background-color: #fefefe;
 }
 
-.comment-title {
-  padding: 10px;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: #fafafa;
-}
 
-.comment {
-  padding: 10px;
-  height: 75%;
-}
+/* responsiveness */
+@media only screen and (max-width: 991px) {
 
-.comment-footer {
-  padding: 10px;
-  border-style: solid;
-  border-width: 1px 0px 0px 0px;
-  border-color: #fafafa;
-}
+  nav a .logo {
+      margin-left: 20px;
+  }
+  #toggle {
+      display: block;
+  }
+  .pc-menu {
+      display: none;
+  }
+  .header {
+      text-align: left;
+      margin: 50px auto;
+  }
 
-p {
-  margin: 0px;
-  font-size: 13px;
-  line-height: 27px;
+  .header h1 {
+      font-size: 30px;
+  }
+  .header p {
+      font-size: 12px;
+      width: 100%;
+  }
+
+  .work img {
+      margin: 2%;
+      width: 90%;
+  }
+  .work2 img {
+      margin: 2%;
+  }
+  #menu li {
+      font-size: 30px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .profile-container {
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .profile-container img {
+    height: 150px;
+    width: 150px;
+  }
+  .content-boxes {
+  width: 100%;
+  }
+  .header,.nav-container,.content {
+      width: 90%;
+  }
+  .design-container, .profile-box {
+    padding:50px 0px;
+  }
 }
