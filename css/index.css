@@ -51,18 +51,15 @@ nav {
   line-height: 270px;
 }
 
-nav a img {
-  vertical-align: middle;
-  height: 270px;
-}
-
-nav a .logo {
-}
-nav a:nth-child(2){
-  float: right;
-}
 .nav-container {
   width: 1020px;
+  margin: auto;
+  text-align: center;
+
+}
+.logo {
+  display: block;
+  height: 500px;
   margin: auto;
 }
 /* ハンバーガーアイコンの設定 */
@@ -187,10 +184,6 @@ footer p {
 
 }
 /* menu関連 */
-.pc-menu {
-  float: right;
-  position: relative;
-}
 .pc-menu li {
   display: inline-block;
   position: relative;
@@ -252,12 +245,6 @@ footer p {
   nav a .logo {
       margin-left: 20px;
   }
-  #toggle {
-      display: block;
-  }
-  .pc-menu {
-      display: none;
-  }
   .header {
       text-align: left;
       margin: 50px auto;
@@ -300,5 +287,13 @@ footer p {
   }
   .design-container, .profile-box {
     padding:50px 0px;
+  }
+}
+
+@media only screen and (max-width: 531px) {
+  .logo {
+    display: block;
+    height: 300px;
+    margin: auto;
   }
 }
