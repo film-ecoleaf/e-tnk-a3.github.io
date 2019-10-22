@@ -74,8 +74,11 @@
                   <img  src="./images/practice02.png" onclick="onClick('practice02')" alt="">
               </div>
               <div class="content-boxes">
-                  <img  src="./images/practice03.png" onclick="onClick('practice01')" alt="">
+                  <img  src="./images/practice03.png" onclick="onClick('practice03')" alt="">
               </div>
+              <div class="content-boxes">
+                <img  src="./images/practice04.png" onclick="onClick('practice04')" alt="">
+            </div>
             </div>
       </div>
 
@@ -84,16 +87,9 @@
       </footer>
     </div>
     <script type="text/javascript">
-
       function onClick(dirName){
-        window.open('../'+ dirName + '/html/index.html');
+        window.open('./'+ dirName + '/html/index.html');
       }
-
-      $("#toggle").click(function(){
-        $(this).toggleClass('on');
-        $("#menu").toggleClass("active");
-        $("body").toggleClass("active");
-      })
     </script>
   </body>
 </html>
