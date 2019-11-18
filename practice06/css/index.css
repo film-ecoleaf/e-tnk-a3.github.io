@@ -24,6 +24,7 @@ body {
 }
 
 .fade-wrapper {
+    height: 100vh;
     background-color: #fff;
     color: #333;
     background-size: cover;
