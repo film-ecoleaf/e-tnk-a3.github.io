@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/parallax.css">
+    <link rel="stylesheet" href="./css/animatnion.css">
     <title>TOP</title>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="./js/animation.js"></script>
   </head>
   <body>
     <div class=".wrapper">
@@ -40,15 +42,15 @@
       </ul>
       <!-- contents-->
       <div class="profile-box">
-          <div class="header about">
+          <div class="header about fade-in">
               <h1 >About</h1>
               <p>福岡でWebデザイナーを目指す元プログラマーです。</p>
               <p>2015年から2018年までプログラミングをしておりました。</p>
               <p>Webアプリの中身ではなく、お客様のイメージを形にして喜んで頂きたいと感じ、</p>
               <p>現在は０からWebデザインの勉強をしております。</p>
               <div class="profile-container">
-                <img src="./images/profile.JPG" alt="plf">
-                <div class="profile">
+                <img src="./images/profile.JPG" alt="plf"  class="fade-in">
+                <div class="profile"  class="fade-in">
                   <p>田中　英輔 - Tanaka Eisuke</p>
                   <p>1994年　8月12日生まれ</p>
                   <p>趣味：楽器・音楽鑑賞</p>
@@ -59,12 +61,12 @@
       </div>
 
       <div class="design-container">
-          <div class="header">
+          <div class="header fade-in">
               <h1 >Web Designs</h1>
-              <p>参考にしている外国のWebデザイナーの方の講座を見ながら、</p>
-              <p>実際の業務をイメージしつつ作成したものをまとめています。</p>
+              <p>参考にしているWebデザイナーの方の講座を見ながら作成した、</p>
+              <p>HTML/CSS/JavaSriptを使用した小技をまとめています。</p>
               <p>作成する際はただ移すだけではなく、自分の中で何かしらのテーマを決め、</p>
-              <p>素材を選びテーマに沿うように意識しています。</p>
+              <p>テーマに沿うような素材選びを意識しています。</p>
             </div>
             <div class="content">
               <div class="content-boxes">
@@ -97,5 +99,5 @@
         window.open('./'+ dirName + '/html/index.html');
       }
     </script>
-  </body>
+</body>
 </html>

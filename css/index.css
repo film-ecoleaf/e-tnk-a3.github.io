@@ -36,6 +36,7 @@ a {
 h1 {
   color: #fff;
   font-size: 48px;
+  margin-bottom: 25px;
 }
 
 p {
@@ -131,6 +132,7 @@ nav {
 }
 .profile {
   margin: 0px 40px;
+  margin-top: 25px;
 }
 .profile p {
   width: 100%;
