@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    perspective: 1px;
+    perspective: 1px; /* bodyにこのプロパティがあると、position:fixedが効かなくなる仕様らしい */
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;

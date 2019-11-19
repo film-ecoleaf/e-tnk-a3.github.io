@@ -20,4 +20,9 @@ $(function(){
             }
         })
     })
-})    
+
+    $(document).on('click', '.top-button',function(){
+        $("body").animate({ scrollTop: 0 }, 500);
+    });
+    
+})
