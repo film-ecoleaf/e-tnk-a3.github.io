@@ -37,6 +37,23 @@ h1 {
   color: #fff;
   font-size: 48px;
   margin-bottom: 25px;
+  position: relative;
+}
+
+h1::before {
+  content: '';
+  border: solid 1px #fff;
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  height: 60px;
+  width: 0;
+  position: absolute;
+  transition: all 1s linear;
+}
+
+.h1-active::before {
+  width: 100%;
 }
 
 p {
@@ -63,45 +80,7 @@ nav {
   height: 500px;
   margin: auto;
 }
-/* ハンバーガーアイコンの設定 */
-#toggle {
-  display: none;
-  visibility: visible;
-  opacity: 1;
-  margin-top: 6px;
-}
 
-#toggle {
-  position: absolute;
-  right: 20px;
-  top: 14px;
-  z-index: 999;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  float: right;
-  transition: all 0.3s ease-out;
-}
-
-#toggle .span {
-  height: 3px;
-  background: #9a9a9a;
-  transition: all 0.3s ease-out;
-  backface-visibility: hidden;
-  margin: 5px auto;
-}
-
-#toggle.on #one {
-  transform: rotate(45deg) translateX(2px) translateY(4px);
-}
-
-#toggle.on #two {
-  opacity: 0;
-}
-
-#toggle.on #three {
-  transform: rotate(-45deg) translateX(8px) translateY(-10px);
-}
 /* ページヘッダー部分 */
 .header {
   width: 1020px;
@@ -145,8 +124,7 @@ nav {
 
 .content {
   width: 1020px;
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -173,9 +151,28 @@ nav {
   cursor: pointer;
 }
 
+.company-name {
+  margin-top: 15px;
+  background-color: #ffffff1a;
+  padding: 10px;
+  border-radius: 25px;
+  color: #e6e6e6;
+  font-size: 12px;
+  text-align: center;
+  border: solid 1px #d6d1d1;
+  transition: .3s;
+}
+.company-name:hover {
+  background-color: #ffffff61;
+}
+.company-name a {
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
 /* footer部分 */
 footer {
-  background: #2f2f2f;
+  background: #000;
   line-height: 120px;
 }
 
@@ -240,6 +237,7 @@ footer p {
   margin: 0px 10px;
 }
 
+/* モバイル表示用TOP移動ボタン */
 .top-button {
   display: none;
   position: fixed;
