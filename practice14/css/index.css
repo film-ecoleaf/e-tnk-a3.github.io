@@ -27,13 +27,13 @@ html,body {
     width: 48%;
     height: 100%;
     position: relative;
+}
+.right-container {
     opacity: 0;
     transform: translateY(-50px);
     animation: fade-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-}
-.right-container {
     animation-delay: 1s;
 }
 
