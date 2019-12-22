@@ -1,0 +1,7 @@
+@media only screen and (max-width:628px) {
+    .pr-text {
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
