@@ -1,135 +1,165 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/parallax.css">
-  <link rel="stylesheet" href="./css/animatnion.css">
-  <title>TOP</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="./js/animation.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index-mobile.css">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <title>EISUKE TANAKA WEBATELIE</title>
 </head>
 
 <body>
-  <div class=".wrapper">
-    <!-- navbar -->
-    <nav class="navBar">
-      <div class="nav-container">
-        <img class="logo" src="./images/Esuke.png" alt="logo">
-
-        <ul class="pc-menu">
-          <li>
-            <a href="https://github.com/e-tnk-a3/e-tnk-a3.github.io" target="_blank"><img src="./images/profile2.png"
-                alt="logo"></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/TNK_create?s=17" target="_blank"><img src="./images/twitter2.png"
-                alt="logo"></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="profile-box">
-      <div class="header about fade-in">
-        <h1 class="fade-in">About</h1>
-        <p>福岡にてフリーランスで活動している、Webデザイン/マークアップエンジニアです。</p>
-        <p>2015年から2018年までプログラマをしておりました。</p>
-        <p>Webアプリの中身ではなく、お客様のイメージを形にして喜んで頂きたいと感じ、</p>
-        <p>現在はWebデザインの勉強をしながらフリーランスで活動しております。</p>
-        <div class="profile-container fade-in">
-          <img src="./images/profile.JPG" alt="plf">
-          <div class="profile">
-            <p>田中　英輔 - Tanaka Eisuke</p>
-            <p>1994年　8月12日生まれ</p>
-            <p>趣味：楽器・音楽鑑賞</p>
-            <p>資格：基本情報技術者 (2015年取得)</p>
-          </div>
-        </div>
-      </div>
-      <div class="header fade-in performance">
-        <h1 class="fade-in">Performance</h1>
+    <nav>
+        <img src="./images/ink.png" alt="" class="ink">
+        <img src="./images/ink2.png" alt="" class="ink-bottom">
         <ul>
-          <li>Webアプリマークアップ/レスポンシブ対応/モバイル版デザイン作成</li>
-          <li>医療企業ページ機能追加</li>
+            <li>
+                <a href="https://github.com/e-tnk-a3/e-tnk-a3.github.io">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/TNK_6812">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
         </ul>
-      </div>
-    </div>
+    </nav>
+    <main id="luxy">
+        <section class="top luxy-el" data-speed-y="20" data-offset="50">
+            <div class="wrapper">
+                <h1>I <span class="gray">AM</span> EISUKE .</h1>
+                <div class="logo"></div>
+                <div class="block white"></div>
+            </div>
+        </section>
+        <section class="about luxy-el" data-speed-y="5" data-offset="-50">
+            <div class="wrapper">
+                <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                    About
+                    <a href="https://twitter.com/TNK_create?s=17" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </h1>
+                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
+                    福岡にてフリーランスで活動している、Webデザイン/マークアップエンジニアです。<br>
+                    2015年から2018年までプログラマをしておりました。<br>
+                    Webアプリの中身ではなく、イメージを形にしてご提供したいと感じ、<br>
+                    現在は日々勉強をしながらフリーランス活動をしております。
+                </p>
+                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
+                    田中　英輔 - TanakaEisuke<br>
+                    1994年　8月12日生まれ<br>
+                    趣味：楽器・音楽鑑賞<br>
+                    資格：基本情報技術者（2015年取得）
+                </p>
+            </div>
+            <img src="./images/profile.JPG" alt="" class="luxy-el wow fadeIn" data-horizontal="1" data-speed-x="8"
+                data-wow-duration="1s" data-wow-offset="500">
+        </section>
+        <section class="designs luxy-el" data-horizontal="1" data-speed-x="-2">
+            <div class="wrapper">
+                <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">WebDesigns</h1>
+                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                    HTML/CSS/JavaScriptを使用した小技や、ちょっとしたデザインをまとめています。<br>
+                    作成する際は自分の中でテーマを決め、テーマに沿う素材選びを意識しています。<br>
+                    フロントエンドはどんどん進化し映像制作のような領域になりつつあるので、<br>
+                    最近は特にアニメーションを集中して取り入れています。
+                </p>
+                <button class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                    <p>VIEW ALL</p>
+                </button>
+            </div>
+            <div class="photos luxy-el wow fadeIn" data-horizontal="1" data-speed-x="2" data-wow-duration="1s"
+                data-wow-offset="600">
+                <div class="slide">
+                    <div class="sliders">
+                        <div class="image-container">
+                            <img src="./images/practice16.png" alt="">
+                            <h3>SVG Animation</h3>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/practice14.png" alt="">
+                            <h3>HoverEffect Animation</h3>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/practice13.png" alt="">
+                            <h3>Transition Animation</h3>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/practice10.png" alt="">
+                            <h3>Movie Background</h3>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/practice07.png" alt="">
+                            <h3>Slide Animation</h3>
+                        </div>
+                        <div class="image-container">
+                            <img src="./images/practice06.png" alt="">
+                            <h3>Typing Animation</h3>
+                        </div>
 
-    <div class="design-container">
-      <div class="header fade-in">
-        <h1 class="fade-in">Web Designs</h1>
-        <p>HTML/CSS/JavaSriptを使用した小技や</p>
-        <p>ちょっとしたデザインをまとめています。</p>
-        <p>作成する際は自分の中で何かしらのテーマを決め、</p>
-        <p>テーマに沿うような素材選びを意識しています。</p>
-      </div>
-      <div class="content fade-in">
-        <div class="content-boxes">
-          <img src="./images/practice16.png" onclick="onClick('practice16')" alt="">
-        </div>
-        <!--
-        <div class="content-boxes">
-          <img src="./images/practice14.png" onclick="onClick('practice14')" alt="">
-        </div>
-        <div class="content-boxes">
-          <img src="./images/practice13.png" onclick="onClick('practice13')" alt="">
-        </div>
--->
-        <div class="content-boxes">
-          <img src="./images/practice10.png" onclick="onClick('practice10')" alt="">
-        </div>
-        <!--
-        <div class="content-boxes">
-          <img src="./images/practice07.png" onclick="onClick('practice07')" alt="">
-        </div>
--->
-        <div class="content-boxes">
-          <img src="./images/practice06.png" onclick="onClick('practice06')" alt="">
-        </div>
-        <div class="content-boxes">
-          <img src="./images/practice04.png" onclick="onClick('practice04')" alt="">
-        </div>
-        <div class="content-boxes">
-          <img src="./images/practice03.png" onclick="onClick('practice03')" alt="">
-        </div>
-        <div class="content-boxes">
-          <img src="./images/practice02.png" onclick="onClick('practice02')" alt="">
-        </div>
-        <div class="content-boxes">
-          <img src="./images/practice01.png" onclick="onClick('practice01')" alt="">
-        </div>
-      </div>
-      <div class="header fade-in">
-        <h1 class="fade-in">LMITATIONS</h1>
-        <p>実際に運用されているサイトを模倣し、0からコーディングしたものをまとめています</p>
-        <p>用意されたデザインデータを基にコーディングする事を想定してコーディングを行っています。</p>
-      </div>
-      <div class="content">
-        <div class="content-boxes">
-          <img src="./images/mosya1.png" onclick="onClick('practice09')" alt="">
-          <p class="company-name">参考サイト <a href="https://irodas.com/">irodas SALON 様</a></p>
-        </div>
-      </div>
-    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="skill luxy-el" data-speed-y="2">
+            <div class="wrapper">
+                <div class="left-container">
+                    <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                        Skill
+                        <a href="https://github.com/e-tnk-a3/e-tnk-a3.github.io" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </h1>
+                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                        <span>HTML5/CSS3/JavaScript</span>使用経験4年<br>
+                        <span>Java </span>使用経験2年<br>
+                        <span>ruby</span>使用経験1年半<br>
+                        <span>MySQL</span>使用経験3年<br>
+                    </p>
+                </div>
+                <div class="right-container">
+                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                        <span>HTML5</span>デザインデータ等画像を基にコードに起こすことが可能<br>
+                        <span>CSS3</span>レイアウトの調整はもちろん、アニメーションの付与が可能<br>
+                        <span>JavaScript/jQuery</span>DOM操作・非同期通信等が可能
+                    </p>
+                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
+                        マークアップを行う際はデータの形式を考慮したDOM設計や、
+                        バックエンド側の処理とライブラリの相性を考慮したご提案、<br>
+                        ソースコードの保守性や規則性も気にかけております。<br>
+                        プログラマとして得たMVC知識を取り入れたフロントエンドのコード設計を常に意識しています。<br>
+                    </p>
+                </div>
+            </div>
+            <img class="java-img luxy-el" src="./images/javaicon.png" alt="" data-horizontal="1" data-speed-x="-7">
+            <img class="mySql-img luxy-el" src="./images/mySql.png" alt="" data-horizontal="1" data-speed-x="6">
+            <img class="ruby-img luxy-el" src="./images/ruby.png" alt="" data-horizontal="1" data-speed-x="-5"
+                data-speed-y="-1">
+            <img class="view-img luxy-el" src="./images/html5css3js_01.png" alt="" data-horizontal="1" data-speed-y="-3"
+                data-speed-x="5">
+        </section>
+        <footer>
+            <div class="end-msg">
+                <p class="cd-modal-trigger">Thank you for viewing.</p>
+            </div>
+        </footer>
+    </main>
 
-
-    <footer>
-      <p>EisukeTanaka | Web Atelier</p>
-    </footer>
-  </div>
-  <!--top-button -->
-  <button type="button" class="top-button">↑</button>
-  <!-- contents-->
-  <script type="text/javascript">
-    function onClick(dirName) {
-      window.open('./' + dirName + '/html/index.html');
-    }
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./js/plugins/hover-effect.umd.js"></script>
+    <script src="./js/plugins/luxy.js"></script>
+    <script src="./js/plugins/wow.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
