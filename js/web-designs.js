@@ -13,9 +13,7 @@ $(function () {
         ) {
         } else {
         }
-        $(defaultImg).addClass('on');
-        $('.theme-title').text($(defaultImg).attr('data-theme-title'));
-        $('.prev').text($('#' + $(defaultImg).attr('data-msg-id')).text());
+        SetProps(defaultImg);
         window.setTimeout(Animation, 2000);
     }
     function ChoseImg() {
@@ -23,13 +21,16 @@ $(function () {
         $('.on').each(function () {
             $(this).removeClass('on');
         });
-        $(this).addClass('on');
-        $('.theme-title').text($(this).attr('data-theme-title'));
-        $('.prev').text($('#' + $(this).attr('data-msg-id')).text());
-        $('button').attr('data-dirname', $(this).attr('data-dirname'))
+        SetProps(this)
         window.setTimeout(Animation, 100);
     }
 
+    function SetProps(image) {
+        $(image).addClass('on');
+        $('.theme-title').text($(image).attr('data-theme-title'));
+        $('.prev').text($('#' + $(image).attr('data-msg-id')).text());
+        $('button').attr('data-dirname', $(image).attr('data-dirname'))
+    }
     function ResetAnimation() {
         $('.theme-title,.prev, button').css('transition', 'unset');
         $('.theme-title,.prev').removeClass('fade-in');
