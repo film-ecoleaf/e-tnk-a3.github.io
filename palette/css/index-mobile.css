@@ -1,0 +1,181 @@
+@media only screen and (max-width:1367px) {
+    .left-container, .right-container {
+        width: 45%;
+    }
+    .left-container h1 {
+        font-size: 32px;
+        color: orange;
+    }
+    .left-container h3 {
+        font-size: 20px;
+        color: orange;
+    }
+    .line {
+        width: 60%;
+    }
+    .opening-wrapper {
+        height: 100%;
+        width: 100%;
+        background: url(../imgaes/top-bg.png) no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+}
+@media only screen and (max-width:1025px) {
+    section.about {
+        padding-bottom: 50px;
+    }
+    .course-wrapper,.infomation-wrapper {
+        width: 75%;
+    }
+    .infomation-wrapper .left-container, .infomation-wrapper .right-container {
+        padding-left: 10px;
+    }
+}
+/* mobile-settings */
+@media only screen and (max-width:1023px) {
+    .opening-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        background: url(../imgaes/top-bg-mobile.png) no-repeat;
+    }
+    .opening-wrapper > img {
+        height: 30vh;
+    }
+    h1 span {
+        font-size: 4rem;
+    }
+    .opening-wrapper h1 span {
+        width: 110px;
+        height: 110px;
+    }
+    .opening-wrapper h1 {
+        font-size: 2rem;
+    }
+    .opening-wrapper h3 {
+        font-size: 2rem;
+    }
+    nav {
+        display: none;
+    }
+    .top {
+        align-content: flex-start;
+    }
+    .top .image-container {
+        height: 30vh;
+    }
+    .top .image-container img {
+        filter: blur(1px) opacity(0.5);
+    }
+    .top-wrapper {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .top-wrapper h1 {
+        font-size: 1.5rem;
+    }
+    .top-wrapper h1 span {
+        font-size: 2rem;
+    }
+    .top-wrapper h3 {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .left-container, .right-container {
+        width: 100%;
+        height: max-content;
+        padding: 10px;
+        padding-top: 100px;
+    }
+    .right-container {
+        padding-top: 50px;
+    }
+    .left-container h1 {
+        font-size: 26px;
+    }
+    .left-container h3 {
+        font-size: 16px;
+        color: orange;
+    }
+    section.about p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+    section.about .left-container p {
+        font-size: 14px;
+    }
+    .line {
+        width: 98%;
+    }
+    .line p {
+        font-size: 16px;
+    }
+    .course-wrapper,
+    .infomation-wrapper,
+    .footer-wrapper {
+        width: 100%;
+    }
+    .infomation-wrapper .left-container,
+    .infomation-wrapper .right-container,
+    .footer-wrapper .left-container,
+    .footer-wrapper .right-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .course-wrapper h1, 
+    .infomation-wrapper h1 {
+        font-size: 24px;
+        margin-bottom: 65px;
+    }
+    .image-wrapper {
+        height: 14vh;
+        width: 48%;
+        padding: 5px;
+    }
+    .footer-wrapper .left-container {
+        text-align: center;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 376px) {
+    .left-container h1 {
+        font-size: 24px;
+    }
+    .image-wrapper {
+        height: 14vh;
+        width: 48%;
+    }
+    .opening-wrapper h1 span {
+        width: 110px;
+        height: 110px;
+    }
+}
+@media only screen and (max-width: 321px) {
+    .left-container h1 {
+        font-size: 20px;
+    }
+    .left-container h3 {
+        font-size: 14px;
+    }
+    section.about p {
+        font-size: 12px;
+    }
+    .opening-wrapper h1 {
+        font-size: 1.5rem;
+    }
+    h1 span {
+        font-size: 3rem;
+    }
+    .opening-wrapper h1 span {
+        width: 85px;
+        height: 85px;
+    }
+    .opening-wrapper h3 {
+        font-size: 2rem;
+    }
+}
