@@ -277,19 +277,9 @@ section.course {
     margin-bottom: 100px;
 }
 .course-wrapper h1 span {
-    position: absolute;
-    top: -130%;
-    right: 45%;
-    left: 55%;
     font-size: 16px;
     color: #222;
-    width: max-content;
-    transform: rotate(20deg);
-    display: inline-block;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 15px;
-    z-index: -1;
+    width: 150px;
 }
 .lesson-course {
     width: 100%;

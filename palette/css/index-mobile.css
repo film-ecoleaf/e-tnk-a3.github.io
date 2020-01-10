@@ -40,6 +40,8 @@
         align-items: center;
         align-content: center;
         background: url(../imgaes/top-bg-mobile.png) no-repeat;
+        background-size: contain;
+        background-position: center center;
     }
     .opening-wrapper > img {
         height: 30vh;
