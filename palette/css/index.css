@@ -127,20 +127,6 @@ section {
 .opening-wrapper h3 {
     font-size: 48px;
 }
-h1 span {
-    font-size: 125px;
-    background-color: orange;
-    border-radius: 50%;
-    padding: 10px;
-    color: #fff;
-}
-.opening-wrapper h1 span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-}
 h3 span {
     color: orange;
 }
@@ -283,11 +269,27 @@ section.course {
     justify-content: space-around;
 }
 .course-wrapper h1 {
+    position: relative;
     font-size: 32px;
     color: orange;
     width: 100%;
     text-align: center;
     margin-bottom: 100px;
+}
+.course-wrapper h1 span {
+    position: absolute;
+    top: -130%;
+    right: 45%;
+    left: 55%;
+    font-size: 16px;
+    color: #222;
+    width: max-content;
+    transform: rotate(20deg);
+    display: inline-block;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 15px;
+    z-index: -1;
 }
 .lesson-course {
     width: 100%;
