@@ -1,6 +1,8 @@
 $(function () {
     Initialize();
-
+    $('nav ul li a').on('cliick', ScrollView);
+    $('button').on('click', ToggleNav);
+    $('nav ul li a').on('click', CloseNav);
     function Initialize() {
         $('.animate').scrolla({
             mobile: true,
@@ -20,6 +22,20 @@ $(function () {
             })
         } else {
         }
+    }
+    function ScrollView() {
+        $($(this).attr('data-scroll')).scrollIntoView({
+            behaivor: "smooth",
+            block: "start"
+        });
+    }
+    function ToggleNav() {
+        $('nav').toggleClass('on');
+        $('button').toggleClass('on');
+    }
+    function CloseNav() {
+        $('nav').removeClass('on');
+        $('button').removeClass('on');
     }
 
 });

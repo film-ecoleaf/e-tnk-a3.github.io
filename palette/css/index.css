@@ -21,6 +21,11 @@ nav {
     z-index: 9;
     background-color: #fff;
     display: none;
+    transition: .5s;
+    transform: translateX(-100vw);
+}
+.on {
+    transform: translateX(0);
 }
 .nav-wrapper {
     display: flex;
@@ -40,41 +45,82 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 nav ul li {
+    width: 100%;
     cursor: pointer;
     list-style: none;
-    padding: 45px 30px;
+    padding: 0px 30px;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
 }
-nav ul li p {
-    position: relative;
+nav ul li:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-nav ul li p::after {
-    position: absolute;
-    display: inline-block;
-    width: max-content;
-    bottom: -75%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-size: 12px;
-    font-weight: bold;
-    color: orange;
-}
-nav ul .about p::after {
-    content: 'About';
-}
-nav ul .course p::after {
-    content: 'Course';
-}
-nav ul .infomation p::after {
-    content: 'Infomation';
+nav ul li:last-child div {
+    width: 50%;
 }
 
+button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: none;
+    border:unset;
+    color: orange;
+    font-weight: bold;
+    z-index: 999;
+    display: none;
+}
+button :focus {
+    outline: 0;
+}
+button span {
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: orange;
+    margin: 15px 0px;
+    transition: .5s;
+}
+button .close {
+    display: none;
+}
+button.on span:first-child {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: rotate(45deg);
+}
+button.on span:nth-child(2) {
+    opacity: 0;
+}
+button.on span:nth-child(3) {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: rotate(135deg);
+}
+button.on p {
+    margin-top: 30px;
+    display: none;
+}
+button.on p.close {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+.middle {
+    color: orange;
+    font-size: 20px;
+}
 /* contents-settings */
 main {
     min-height: 100vh;
@@ -384,6 +430,34 @@ li .impact {
 .ad-lesson {
     color: #FF675C;
     border-color: #FF675C;
+}
+/* campaign-settings */
+section.campaign {
+    margin: 100px 0px;
+}
+.campaign-wrapper {
+    margin-top: 100px;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.campaign-wrapper h1 {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    color: orange;
+    margin-bottom: 100px;
+}
+.campaign-wrapper .img-container {
+    width: 45%;
+    overflow: hidden;
+    filter: drop-shadow(2px 4px 6px #2222);
+}
+.img-container img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* infomation-settings */

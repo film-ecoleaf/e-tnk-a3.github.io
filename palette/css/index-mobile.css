@@ -34,6 +34,18 @@
 }
 /* mobile-settings */
 @media only screen and (max-width:1023px) {
+    nav {
+        display: block;
+        background-image: url(../imgaes/site-bg.png);
+    }
+    nav ul {
+        background: url(../imgaes/top-bg-mobile.png) no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+    button {
+        display: block;
+    }
     .opening-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -58,9 +70,6 @@
     }
     .opening-wrapper h3 {
         font-size: 2rem;
-    }
-    nav {
-        display: none;
     }
     .top {
         align-content: flex-start;
@@ -116,10 +125,12 @@
         font-size: 16px;
     }
     .course-wrapper,
+    .campaign-wrapper,
     .infomation-wrapper,
     .footer-wrapper {
         width: 100%;
     }
+    .campaign-wrapper .img-container,
     .infomation-wrapper .left-container,
     .infomation-wrapper .right-container,
     .footer-wrapper .left-container,
@@ -127,7 +138,8 @@
         width: 100%;
         padding: 10px;
     }
-    .course-wrapper h1, 
+    .course-wrapper h1,
+    .campaign-wrapper h1, 
     .infomation-wrapper h1 {
         font-size: 24px;
         margin-bottom: 65px;
