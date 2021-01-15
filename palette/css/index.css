@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
+}
+.g-font {
+    font-family: 'Abril Fatface';
+    letter-spacing: 2px;
 }
 /* fade-in-settings */
 .animate {
@@ -140,6 +144,10 @@ section {
     background-image: url(../imgaes/site-bg.png);
 }
 .opening-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
     height: 100%;
     width: 100%;
     background: url('../imgaes/top-bg.png') no-repeat;
@@ -171,7 +179,7 @@ section {
     font-size: 72px;
 }
 .opening-wrapper h3 {
-    font-size: 48px;
+    font-size: 72px;
 }
 h3 span {
     color: orange;
@@ -250,7 +258,7 @@ section.about .right-container {
 }
 section.about .left-container p {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     margin-top: 50px;
     line-height: 2;
     background-color: #fff;
@@ -260,6 +268,7 @@ section.about .left-container p {
 section.about p span {
     color: #3d773f;
     line-height: 75px;
+    font-weight: bold;
 }
 .right-container {
     display: flex;
@@ -306,10 +315,11 @@ section.about p span {
 /* course-setting */
 section.course {
     min-height: 100vh;
+    background: url(../imgaes/top-bg.png);
 }
 .course-wrapper {
     width: 65%;
-    margin: 100px auto 0;
+    margin: 0px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -320,7 +330,8 @@ section.course {
     color: orange;
     width: 100%;
     text-align: center;
-    margin-bottom: 100px;
+    margin: 50px 0px;
+    line-height: 1;
 }
 .course-wrapper h1 span {
     font-size: 16px;
@@ -329,11 +340,15 @@ section.course {
 }
 .lesson-course {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     padding: 10px;
+    border-bottom: 1px solid #eaeaea;
 }
 .lesson-course h3 {
     margin-bottom: 15px;
+}
+.lesson-course p {
+    font-size: 14px;
 }
 h3.custom {
     color: #B85CFF;
@@ -343,15 +358,15 @@ h3.regular {
 }
 label.regular {
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     background-color: #73cc2f;
-    padding: 1px;
+    padding: 5px 10px;
 }
 label.custom {
     color: #fff;
-    font-weight: bold;
+    font-weight: 400;
     background-color: #B85CFF;
-    padding: 1px;
+    padding: 5px 10px;
 }
 .lesson-course label {
     color: #222;
@@ -367,10 +382,15 @@ label.custom {
     color: orange;
 }
 .course-container {
-    width: 315px;
-    height: 500px;
+    min-width: 315px;
+    width: 20vw;
+    min-height: 500px;
     font-size: 14px;
     border-radius: 15px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .course-header {
     width: 100%;
@@ -388,11 +408,19 @@ label.custom {
 .course-body ul li {
     list-style: none;
 }
+.course-body ul li p {
+    line-height: 2;
+}
+.course-body ul li p.info {
+    line-height: 1;
+}
 .course-body ul li:first-child {
-    height: 200px;
+    min-height: 200px;
     margin-bottom: 50px;
 }
-
+.course-body ul li:last-child {
+    margin-top: 20px;
+}
 
 li .label {
     display: inline-block;
