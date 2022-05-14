@@ -7,6 +7,9 @@
 a:link, a:visited, a:hover, a:active {
   color: unset;
 }
+.animate {
+    opacity: 0;
+}
 /* ink-settings */
 .ink {
     position: fixed;

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px;
+}
+
+main .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+main .profile-container h1 {
+  font-size: 72px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  width: 100%;
+}
+
+main .profile-container ul {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .profile-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .profile-container ul li .label {
+  width: 200px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+main .profile-container ul li .label span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+main .profile-container ul li .profile-msg {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+main .profile-container ul li .profile-msg span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+main .profile-image-container {
+  width: 50%;
+}
+
+main .profile-image-container .image-wrapper {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 5px #33333388;
+          box-shadow: 5px 5px 5px #33333388;
+}
+
+main .profile-image-container .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

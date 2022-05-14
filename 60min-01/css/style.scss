@@ -1,0 +1,73 @@
+$midasi-font-size : 72px;
+$text-font-size: 24px;
+$small-font-size: 12px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+ul li {
+    list-style: none;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    .profile-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 50%;
+        h1 {
+            font-size: $midasi-font-size;
+            letter-spacing: 2px;
+            font-weight: 500;
+            width: 100%;
+        }
+        ul {
+            width: max-content;
+        }
+        ul li {
+            display: flex;
+            margin: 50px 0px;
+            width: max-content;
+            .label {
+                width: 200px;
+                font-size: $text-font-size;
+                line-height: 1.3;
+                span {
+                    font-size: $small-font-size;
+                    font-weight: bold;
+                }
+            }
+            .profile-msg {
+                font-size: $text-font-size;
+                line-height: 1.3;
+                span {
+                    font-size: $small-font-size;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .profile-image-container {
+        width: 50%;
+        .image-wrapper {
+            height: 500px;
+            width: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-shadow: 5px 5px 5px #33333388;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

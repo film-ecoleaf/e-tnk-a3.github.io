@@ -13,19 +13,23 @@ $(function () {
     });
 
     function Initialize() {
-        new WOW().init();
+        $('.animate').scrolla({
+            mobile: true,
+            once: true
+        });
         var ua = navigator.userAgent;
         if (
             ua.indexOf('iPhone') > 0 ||
             ua.indexOf('iPad') > 0 ||
             ua.indexOf('Android') > 0
         ) {
-            $('.wow').each(function () {
+            $('.animate').each(function () {
                 $(this).attr({
-                    'data-wow-durations': '1s',
-                    'data-wow-offset': '100'
+                    'data-durations': '1s',
+                    'data-scrolla-offset': '-100'
                 });
             })
+            $('.photos').attr('data-scrolla-offset', '300')
             $('.about > .luxy-el').attr({
                 'data-horizontal': 0,
                 'data-speed-x': 0
